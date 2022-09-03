@@ -3,7 +3,7 @@
 ## Metodología
 
 
-###Diseño de la herramienta:
+### Diseño de la herramienta:
 	Se diseñó una herramienta en Fusion 360 que sostuviera al marcador. Se dibuja la base para que tenga los huecos para un tornillo M6 y que estén dispuestos de igual manera que en el plato del robot. En la punta se modela una a rosca M24 con paso de 3mm para enroscar una tapa (con la misma rosca) que tiene un agujero por donde sobresale la punta del marcador. El eje del tubo se modela formando un ángulo de 50 grados con respecto a la horizontal de la herramienta. Esto se realizó con el objetivo de facilitar la escritura y mejorar la rigidez de la sujeción del marcador. Al interior del tubo de la herramienta se introduce un marcador pero antes de este se introduce un resorte. Este permite modular la presión sobre la punta del marcador cuando el robot escribe sobre el tablero. Esto es importante para que el robot no mueva el tablero mientras escribe y para que tenga cierta tolerancia respecto a la definición de los 3 puntos que toma de referencia el robot.
 En cuanto a la impresión en 3d, esta herramienta tomó 7 horas en su impresión. Se imprimió con material PLA, con una estructura interna hexagonal y con un relleno al 50%.
 Una vez impresa la pieza, se retiró la rebaba sobrante y en particular se utilizó una lija para lograr que la tapa se pudiera enroscar con la tapa. 
