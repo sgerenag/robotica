@@ -95,6 +95,9 @@ En el siguiente link se observa la simulación lograda con robotstudio:
 	Programa y prueba con el robot: https://youtu.be/fxF33lgCepg
 	Se logró realizar la escritura de las letras en el tablero como se ve en el video a continuación:
 	Link al video: https://youtu.be/jJ5Ot2ZODrU
+## Analisis
+Se observa que se logró la escritura de las letras de manera satisfactoria. Sin embargo durante el procedimiento hubo distintos factores que  jugaron un papel importante. Por ejemplo se observó que un resorte muy duro impedía cualquier tolerancia sobre la definición del work object, pues se despegaba fácil del plano o empujaba fuertemente el tablero, moviéndolo. Por esto fue esencial utilizar un resorte blando. Además de esto la definición del work object también jugó un papel importante. Si este no se definía en el orden correcto (X1, X2, Y1), no se lograba un correcto ajuste. También era importante que estuviesen ubicados estos puntos lo más perpendicularmente entre sí. De lo contrario se observó como el plano sobre el cual se movía el robot quedaba no paralelo a la superficie del tablero.
+Sin embargo se logró evidenciar que el software de simulación cumplía su función y que el programa previamente hecho se ejecutó de acuerdo a lo esperado.
 
 
 
