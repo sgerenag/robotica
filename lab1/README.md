@@ -50,7 +50,34 @@ Para crear la trayectoria, seleccionamos todas las posiciones creadas y damos cl
 ![image](https://user-images.githubusercontent.com/38962033/188249634-5ec19afd-c106-4d97-b16f-ca9c9f2d290e.png)
 
 ### Programación y prueba con el robot:
-Inicialmente se introduce la usb con el programa cargado y  se 
+Inicialmente se introduce la usb con el programa cargado, se va  a module en la pestaña superior y se buscan y se cargan los archivos en la usb CalibData y Module1.
+![image](https://user-images.githubusercontent.com/37639887/188256202-32ce2b45-3d25-4cb5-ba8b-d17cff9e2619.png)
+
+Ahora vamos a “Jogging” y aquí cambiamos la herramienta y el objeto de trabajo que tiene por defecto el flexpendant. Vamos al menu y aqui escogemos “program data” y aquí primero definiremos el “work object” presionando en wobjdata. 
+
+![image](https://user-images.githubusercontent.com/37639887/188256208-96592a86-3b1a-4d30-8944-67bcfe1796bb.png)
+
+Al hacer click aquí, seleccionamos “Workobject_1”, que es nuestro work object. Después vamos a “edit” y seleccionamos “define”.
+
+![image](https://user-images.githubusercontent.com/37639887/188256222-cc155bbe-53a6-4700-87fa-2cada9630bf7.png)
+
+En este punto debemos configurar el work-object por medio del método de 3 puntos, para esto seleccionamos esta opción del menú “User Method”.
+![image](https://user-images.githubusercontent.com/37639887/188256231-3f01591e-c733-4328-a8d6-6760768b4259.png)
+
+
+Ahora lo que hicimos fue ubicar al robot en cada uno de los puntos X1, X2, Y1 correspondientes con el plano sobre el cual trabajaría el robot. Una vez en cada punto, seleccionamos “Modify Position” para guardar la coordenada en el punto. Al tener los 3 puntos definidos, seleccionamos ok y así se define el work object sobre el plano físico sobre el cual trabajaremos.
+
+Ahora seleccionamos la herramienta en el programa yendo de nuevo en el menú a “Jogging” y se selecciona Tool. Aquí escogemos la herramienta de nuestro programa y damos ok.
+![image](https://user-images.githubusercontent.com/37639887/188256249-b55b2b53-5f45-413a-861f-5196a2af0d0e.png)
+
+
+Ya con la herramienta y el objeto de trabajo configurados, podemos correr el programa. Esto lo hacemos dirigiéndonos en el menú a programa editor, después a “debug” y aquí, seleccionamos “PP to Main”.
+![image](https://user-images.githubusercontent.com/37639887/188256255-80c0690b-10a1-492f-a1b1-b38ee29118b8.png)
+
+Ya con esto, se puede hacer click sobre el botón de “play” ubicado en la parte inferior derecha del flexpendant. A continuación el robot ejecutará el programa sobre el objeto de trabajo configurado.
+![image](https://user-images.githubusercontent.com/37639887/188256258-d19d4ed7-a67d-483d-96b3-4a53dc358a94.png)
+
+
 
 ## Resultados:
 	
