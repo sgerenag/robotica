@@ -1,6 +1,18 @@
 # Laboratorio 1 - Robótica Industrial No 1
 
 ## Metodología
+
+
+###Diseño de la herramienta:
+	Se diseñó una herramienta en Fusion 360 que sostuviera al marcador. Se dibuja la base para que tenga los huecos para un tornillo M6 y que estén dispuestos de igual manera que en el plato del robot. En la punta se modela una a rosca M24 con paso de 3mm para enroscar una tapa (con la misma rosca) que tiene un agujero por donde sobresale la punta del marcador. El eje del tubo se modela formando un ángulo de 50 grados con respecto a la horizontal de la herramienta. Esto se realizó con el objetivo de facilitar la escritura y mejorar la rigidez de la sujeción del marcador. Al interior del tubo de la herramienta se introduce un marcador pero antes de este se introduce un resorte. Este permite modular la presión sobre la punta del marcador cuando el robot escribe sobre el tablero. Esto es importante para que el robot no mueva el tablero mientras escribe y para que tenga cierta tolerancia respecto a la definición de los 3 puntos que toma de referencia el robot.
+En cuanto a la impresión en 3d, esta herramienta tomó 7 horas en su impresión. Se imprimió con material PLA, con una estructura interna hexagonal y con un relleno al 50%.
+Una vez impresa la pieza, se retiró la rebaba sobrante y en particular se utilizó una lija para lograr que la tapa se pudiera enroscar con la tapa. 
+
+
+###Programación y prueba con el robot:
+Inicialmente se introduce la usb con el programa cargado y  se 
+
+
 ### Diseño del codigo: 
 Para el diseño del codigo, primero se importan la herramienta y el objeto de trabajo sobre el cual se va a trabajar, para esto se importa la geometria del objeto en la estacion de trabajo y tambien se posiciona la herramienta en el brazo, de forma que obtenemos el siguiente esquema  
 
@@ -36,6 +48,19 @@ Una vez creado los puntos tendremos algo como lo que se muestra en la siguiente 
 
 Para crear la trayectoria, seleccionamos todas las posiciones creadas y damos clic izquierdo sobre la seleccion, posteriormente vamos a "añadir a nueva trayectoria", con esto se crea automaticamente la trayectoria a travez de los puntos, importante a la hora de crear los puntos guardar un orden en la ruta consecuente a la creacion del punto, para guardar un sentido en la trayectoria creada.  
 ![image](https://user-images.githubusercontent.com/38962033/188249634-5ec19afd-c106-4d97-b16f-ca9c9f2d290e.png)
+
+
+###Resultados:
+	
+Herramienta:
+Se obtuvo como resultado de la impresión en 3d la herramienta impresa con un peso de 56g.
+	Simulación:
+Se obtuvo la simulación del movimiento del robot con las letras DA.
+En el siguiente link se observa la simulación lograda con robotstudio: 
+	Programa y prueba con el robot:
+	Se logró realizar la escritura de las letras en el tablero como se ve en el video a continuación:
+	Link al video: https://youtu.be/jJ5Ot2ZODrU
+
 
 
 
