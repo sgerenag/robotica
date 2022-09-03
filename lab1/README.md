@@ -65,7 +65,11 @@ En el siguiente link se observa la simulación lograda con robotstudio:
 
 ## Analisis
 
-## Conclusiones
+## Conclusiones:
+La definición de un work object permite realizar una operación para la que fue programado el robot sobre un plano que se define en la práctica en el lugar de trabajo. Esto permite el uso del mismo programa cuando hay cambios o se desconoce en cierta medida el entorno de trabajo en el que el robot hará la tarea. Todo esto sin necesidad de reescribir un programa para la misma tarea.
+
+El poder simular al robot en software permite que se tenga certeza de que el programa se ejecuta como uno espera y también permite detectar los errores o aspectos indeseables del programa y todo esto sin disponer del robot. Esto facilita la labor de programación y depuración, pues así  no se requiere tener un robot al lado para poderlo programar y además hace que el proceso de programación y diseño del programa sea más seguro para las personas, el robot y su entorno.
+
 
 
 
