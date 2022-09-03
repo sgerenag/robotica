@@ -92,7 +92,7 @@ Se obtuvo como resultado de la impresión en 3d la herramienta impresa con un pe
 Simulación:
 Se obtuvo la simulación del movimiento del robot con las letras DA.
 En el siguiente link se observa la simulación lograda con robotstudio: 
-	Programa y prueba con el robot:
+	Programa y prueba con el robot: https://youtu.be/fxF33lgCepg
 	Se logró realizar la escritura de las letras en el tablero como se ve en el video a continuación:
 	Link al video: https://youtu.be/jJ5Ot2ZODrU
 
