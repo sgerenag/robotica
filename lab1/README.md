@@ -8,11 +8,6 @@ Se diseñó una herramienta en Fusion 360 que sostuviera al marcador. Se dibuja 
 En cuanto a la impresión en 3d, esta herramienta tomó 7 horas en su impresión. Se imprimió con material PLA, con una estructura interna hexagonal y con un relleno al 50%.
 Una vez impresa la pieza, se retiró la rebaba sobrante y en particular se utilizó una lija para lograr que la tapa se pudiera enroscar con la tapa. 
 
-
-###Programación y prueba con el robot:
-Inicialmente se introduce la usb con el programa cargado y  se 
-
-
 ### Diseño del codigo: 
 Para el diseño del codigo, primero se importan la herramienta y el objeto de trabajo sobre el cual se va a trabajar, para esto se importa la geometria del objeto en la estacion de trabajo y tambien se posiciona la herramienta en el brazo, de forma que obtenemos el siguiente esquema  
 
@@ -49,8 +44,10 @@ Una vez creado los puntos tendremos algo como lo que se muestra en la siguiente 
 Para crear la trayectoria, seleccionamos todas las posiciones creadas y damos clic izquierdo sobre la seleccion, posteriormente vamos a "añadir a nueva trayectoria", con esto se crea automaticamente la trayectoria a travez de los puntos, importante a la hora de crear los puntos guardar un orden en la ruta consecuente a la creacion del punto, para guardar un sentido en la trayectoria creada.  
 ![image](https://user-images.githubusercontent.com/38962033/188249634-5ec19afd-c106-4d97-b16f-ca9c9f2d290e.png)
 
+### Programación y prueba con el robot:
+Inicialmente se introduce la usb con el programa cargado y  se 
 
-###Resultados:
+## Resultados:
 	
 Herramienta:
 Se obtuvo como resultado de la impresión en 3d la herramienta impresa con un peso de 56g.
@@ -60,6 +57,10 @@ En el siguiente link se observa la simulación lograda con robotstudio:
 	Programa y prueba con el robot:
 	Se logró realizar la escritura de las letras en el tablero como se ve en el video a continuación:
 	Link al video: https://youtu.be/jJ5Ot2ZODrU
+
+## Analisis
+
+## Conclusiones
 
 
 
