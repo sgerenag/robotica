@@ -57,7 +57,10 @@ Inicialmente se introduce la usb con el programa cargado y  se
 Herramienta:
 Se obtuvo como resultado de la impresión en 3d la herramienta impresa con un peso de 56g. Esta se logro acoplar muy bien al robot.
 
-<img src="https://user-images.githubusercontent.com/37639887/188252846-15744b92-14f8-49e5-b381-9c9702881be8.png" width="200" height="auto">
+<img src="https://user-images.githubusercontent.com/37639887/188252846-15744b92-14f8-49e5-b381-9c9702881be8.png" width="200" height="auto" style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;">
 	
 	Simulación:
 Se obtuvo la simulación del movimiento del robot con las letras DA.
