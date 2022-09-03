@@ -9,6 +9,8 @@ En cuanto a la impresión en 3d, esta herramienta tomó 7 horas en su impresión
 Una vez impresa la pieza, se retiró la rebaba sobrante y en particular se utilizó una lija para lograr que la tapa se pudiera enroscar con la tapa. 
 
 ![image](https://user-images.githubusercontent.com/37639887/188252280-6c8dfb24-d5ab-4b71-9382-1f3b9d49c69f.png)
+![image](https://user-images.githubusercontent.com/37639887/188252345-2607a76a-2e65-4cdf-a302-044ae4b66fab.png)
+
 
 
 ### Diseño del codigo: 
