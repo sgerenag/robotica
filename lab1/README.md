@@ -96,7 +96,7 @@ En el siguiente link se observa la simulación lograda con robotstudio:
 	Se logró realizar la escritura de las letras en el tablero como se ve en el video a continuación:
 	Link al video: https://youtu.be/jJ5Ot2ZODrU
 
-## Analisis
+
 
 ## Conclusiones:
 La definición de un work object permite realizar una operación para la que fue programado el robot sobre un plano que se define en la práctica en el lugar de trabajo. Esto permite el uso del mismo programa cuando hay cambios o se desconoce en cierta medida el entorno de trabajo en el que el robot hará la tarea. Todo esto sin necesidad de reescribir un programa para la misma tarea.
