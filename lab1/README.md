@@ -8,6 +8,8 @@ Se diseñó una herramienta en Fusion 360 que sostuviera al marcador. Se dibuja 
 En cuanto a la impresión en 3d, esta herramienta tomó 7 horas en su impresión. Se imprimió con material PLA, con una estructura interna hexagonal y con un relleno al 50%.
 Una vez impresa la pieza, se retiró la rebaba sobrante y en particular se utilizó una lija para lograr que la tapa se pudiera enroscar con la tapa. 
 
+![image]
+
 ### Diseño del codigo: 
 Para el diseño del codigo, primero se importan la herramienta y el objeto de trabajo sobre el cual se va a trabajar, para esto se importa la geometria del objeto en la estacion de trabajo y tambien se posiciona la herramienta en el brazo, de forma que obtenemos el siguiente esquema  
 
