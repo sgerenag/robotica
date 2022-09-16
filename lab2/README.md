@@ -122,8 +122,21 @@ pos = call(client,recfunc,"Timeout",3)
 El comando para finalizar el nodo maestro en Matlab es rosshutdown. 
 
 ## Resultados
+
 A continuacion se aprecia un video del funcionamiento de la tortuga con cada uno de los comandos dados
 https://youtu.be/pGD2dH0vhOM
+
+### Scripts de Matlab
+A continuacion se muestra la salida de los scripts solicitados y el efecto sobre la tortuga:
+
+subs.m:
+![image](https://user-images.githubusercontent.com/37639887/190688543-7e184db6-0d15-436d-8ade-08d87b5dff3f.png)
+
+servPos.m:
+![image](https://user-images.githubusercontent.com/37639887/190688719-da74fe33-20b0-4229-b2e3-d439e2c6997c.png)
+![image](https://user-images.githubusercontent.com/37639887/190688840-72ba8c31-cf70-4c54-9f67-ac5780cf1ad8.png)
+
+
 
 ## Analisis
 El uso de toics para comunicar informacion entre nodos es una estructura escencial y la logica detras de la programacion modular de ros, esto se puede evidenciar en este laboratorio, donde podemos hacer funcion de los topicos para comunicar ciertas acciones a otro nodo, la capacidad de integrarse a python es una facilidad a la hora de realizar posteriormente programas mas complicados para el control del robot, ademas se aprecia tambien que un nodo no solamente puede publicar a ciertos topicos sino usar servicios que ofrece un paquete, los conceptos de nodo, topico y servicios fueron aplicados en este laboratorio.
