@@ -140,7 +140,13 @@ Salida de servPos.m:
 
 
 ## Analisis
-El uso de toics para comunicar informacion entre nodos es una estructura escencial y la logica detras de la programacion modular de ros, esto se puede evidenciar en este laboratorio, donde podemos hacer funcion de los topicos para comunicar ciertas acciones a otro nodo, la capacidad de integrarse a python es una facilidad a la hora de realizar posteriormente programas mas complicados para el control del robot, ademas se aprecia tambien que un nodo no solamente puede publicar a ciertos topicos sino usar servicios que ofrece un paquete, los conceptos de nodo, topico y servicios fueron aplicados en este laboratorio.
+El uso de topics para comunicar informacion entre nodos es una estructura escencial y la logica detras de la programacion modular de ros, esto se puede evidenciar en este laboratorio, donde podemos hacer funcion de los topicos para comunicar ciertas acciones a otro nodo, la capacidad de integrarse a python es una facilidad a la hora de realizar posteriormente programas mas complicados para el control del robot, ademas se aprecia tambien que un nodo no solamente puede publicar a ciertos topicos sino usar servicios que ofrece un paquete, los conceptos de nodo, topico y servicios fueron aplicados en este laboratorio.
+
+### Analisis scripts de Matlab
+Se observa que mediante el toolbox ROS de Matlab se puede crear un nodo global de matlab que permite hacer  publicacion, subsripcion y solicitud de servicios desde Matlab.
+Respecto a la publicacion, se observa que al correr scripLab1.m se mueve la tortuga a la derecha. Esto sucede porque se publica al topico "/turtle1/cmd_vel" la velocidad que debe tener la tortuga en la direccion en la que esta esta orientada, la cual indica moverse hacia el frente. 
+La salida de la subscripcion permite oservar las caracteristicas que corresponden al topico suscrito y al obtener el ultimo mensaje, este viene con la forma y tipo de mensaje esperados, en le cual se transmite la posicion actual de la tortuga (X, Y) y su orientacion en radianes.  
+Finalmente, en cuanto a la solicitud del servicio, se observa que al ejecutar el codigo, la tortuga cambia su posicion y orientacion. Esto se puede verificar en la ventana de turtlesim y tambien en la nueva salida del topico de pose, en donde se observan los valores de X, Y, Theta actualizados.
 
 ## Conclusiones
 A manera de conclusion, se destaca la gran versatilidad que ofrece ROS a la hora de realizar programas mediante paquetes, su capacidad de integrar varios programas como python o matlab reflejan ampliamente la modularidad que posee este mismo. Con este laboratorio se afianso varios conceptos basicos a la hora de trabajar con ROS como lo es nodo, topico, servicios, paquetes y publicar en un topico. Tambien se esclarecio la relacion entre estos conceptos que es muy importante a la hora de trabajar con ROS.
