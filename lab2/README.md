@@ -9,7 +9,8 @@ El primer paso es crear un archivo .py donde vamos a crear todo nuestro codigo, 
 
 Despues de creado el archivo, pasamos a la creacion del codigo, el primer paso es importar las librerias necesarias para usar ros en python, ademas de las necesarias para usar sus servicios y, poder leer la tecla presionada, a continuacion la seccion del codigo que realiza dicha importacion
 
-'#!/usr/bin/env python 
+```
+#!/usr/bin/env python 
 #Script de python del nodo tipo Teleop_key para mover turtle
 import rospy
 from geometry_msgs.msg import Twist
@@ -17,7 +18,8 @@ from turtlesim.srv import TeleportAbsolute, TeleportRelative
 import termios, sys, os
 from numpy import pi
 import termios, sys, os
-TERMIOS = termios'
+TERMIOS = termios
+```
 
 Ya con esto podemos iniciar a realizar codigo, el primero es ña funcion para retornar la tecla presionada, esto dado que el comando que se le dara a la tortuga sera mediante el teclado del computador, esta funcion no tiene problema con linux y retorna la tecla que se presiona en forma de string (hay que hacer una pequeña seleccion ya que no es solamente el string de la tecla lo que se devuelve pero esto se tendra en cuenta mas adelante en el codigo)
 ~~~
