@@ -21,7 +21,7 @@ import termios, sys, os
 TERMIOS = termios
 ```
 
-Ya con esto podemos iniciar a realizar codigo, el primero es ña funcion para retornar la tecla presionada, esto dado que el comando que se le dara a la tortuga sera mediante el teclado del computador, esta funcion no tiene problema con linux y retorna la tecla que se presiona en forma de string (hay que hacer una pequeña seleccion ya que no es solamente el string de la tecla lo que se devuelve pero esto se tendra en cuenta mas adelante en el codigo)
+Ya con esto podemos iniciar a realizar codigo, el primero es ña funcion para retornar la tecla presionada, esto dado que el comando que se le dara a la tortuga sera mediante el teclado del computador, esta funcion no tiene problema con linux y retorna la tecla que se presiona en forma de string (hay que hacer una pequeña seleccion ya que no es solamente el string de la tecla lo que se devuelve pero esto se tendra en cuenta mas adelante en el codigo) este codigo llo puedes encontrar en el siguiente enlace http://python4fun.blogspot.com/2008/06/get-key-press-in-python.html
 ~~~
 def getkey():
     fd = sys.stdin.fileno()
@@ -40,7 +40,7 @@ def getkey():
         termios.tcsetattr(fd, TERMIOS.TCSAFLUSH, old)
     return c
 ~~~
-
+Una vez tenemos la tecla presionada, pasamos a crear la funcion que hace que la tortuga se mueva adelante, atras o rote en los distintos sentidos podemos usar el topico _/turtle1/cmd_vel_
 
 ## Resultados
 ## Analisis
