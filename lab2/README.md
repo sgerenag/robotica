@@ -153,4 +153,5 @@ Finalmente, en cuanto a la solicitud del servicio, se observa que al ejecutar el
 ## Conclusiones
 
 A manera de conclusion, se destaca la gran versatilidad que ofrece ROS a la hora de realizar programas mediante paquetes, su capacidad de integrar varios programas como python o matlab reflejan ampliamente la modularidad que posee este mismo. Con este laboratorio se afiansaron varios conceptos basicos a la hora de trabajar con ROS como lo es nodo, topico, servicios, paquetes y publicar en un topico. Tambien se esclarecio la relacion entre estos conceptos que es muy importante a la hora de trabajar con ROS.
+
 Matlab, por medio deltoolbox ROS, permite la publicacion, subsripcion y solicitud de servicios en una red de ROS por medio de su lenguaje, es decir, matlab se puede integrar como parte en una red de ROS.
