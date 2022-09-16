@@ -40,9 +40,67 @@ def getkey():
         termios.tcsetattr(fd, TERMIOS.TCSAFLUSH, old)
     return c
 ~~~
-Una vez tenemos la tecla presionada, pasamos a crear la funcion que hace que la tortuga se mueva adelante, atras o rote en los distintos sentidos podemos usar el topico _/turtle1/cmd_vel_
+Una vez tenemos la tecla presionada, pasamos a crear la funcion que hace que la tortuga se mueva adelante, atras o rote en los distintos sentidos podemos usar el topico _/turtle1/cmd_vel_ para esto primero creamos un publisher para ese topico, despues de esto iniciamos el nodo y publicamos la informacion correspondiente al topico, la definicion de que tanto se mueve segun cada uno de los comandos (la propiedad _angular_ es para el giro en tanto la propiedad _linear_ es para avanzar )
+~~~
+def moveturtle(line_vel,angle_vel):
+    rospy.init_node('myTeleopKey',anonymous=True)
+    pub = rospy.Publisher('/turtle1/cmd_vel',Twist, queue_size=10)
+    vel = Twist()
+    vel.linear.x=line_vel
+    vel.angular.z=angle_vel
+    pub.publish(vel)
+~~~
+Con estas funciones ya se puede hacer el movimiento de las teclas _a_,_s_,_d_y_w_ mas sin embargo, aun falta los comandos para la letra _r_ y _space_ los cuales retornan a la posicion central en la orientacion default y gira 180° sobre si mismo respectivamente, para hacer esto podemos usar los servicios _/turtle1/teleport_absolute_ y _/turtle1/teleport_relative_. Para poder usar estos servicios lo primero que debemos hacer es primero, esperamos por el servicio (con _absolute_ vamos a realizar el desplazamiento a la mitad del mapa con orientacion inicial en cambio con _relative_ vamos a realizar el giro de 180 grados) para posteriormente pasar los parametros requeridos por este servicio para hacer la orden que queremos, usamos relative para el giro de 180 ya que este depende de la orientacion actual de la tortuga, en cambio el absolute no tiene  en cuenta ese factor.
+~~~
+def Absolute(x, y,ang):
+    rospy.wait_for_service('/turtle1/teleport_absolute')
+    try:
+        absolute=rospy.ServiceProxy('/turtle1/teleport_absolute',TeleportAbsolute)
+        res=absolute(x,y,ang)
+        print('teletransportado a x: ',x,'y en y: ',y, 'con angulo: ',ang)
+        return res
+    except rospy.ServiceException as e:
+        print("Service call failed: %s"%e)
+def Relative(x,ang):
+    rospy.wait_for_service('/turtle1/teleport_relative')
+    try:
+        Relative=rospy.ServiceProxy('/turtle1/teleport_relative',TeleportRelative)
+        res=Relative(x,ang)
+        print('teletransportado a x: ',x, 'con angulo: ',ang)
+        return res
+    except rospy.ServiceException as e:
+        print("Service call failed: %s"%e)
 
+~~~
+Por ultimo creamos la funcion main la cual indica el ciclo de pedir un valor de tecla y segun la respuesta, realizar la accion correspondiente, es aca donde damos los valores a pasar, para los giros, segun el sentido, se pasa el valor de velocidad angular en radianes de 0.1 o -0.1. Para el movimiento lineal de avanzar o retroceder se da una velocidad de 1 o -1. Por ultimo, el movimiento de volver a la posicion central y de girar pi radianes se hace llamando a las respectivas funciones con parametros segun lo establecido.
+~~~
+if __name__ == '__main__':
+    
+    while True:
+        d= str(getkey())[-2]
+        print('holi, se lee tecla ',d)
+        if d=='a':
+            moveturtle(0,0.1)
+        elif d=='s':
+            moveturtle(-1,0)
+        elif d=='d':
+            moveturtle(0,-0.1)
+        elif d=='w':
+            
+            moveturtle(1,0)
+            
+        elif d=='r':
+            Absolute(5.5,5.5,pi/2)
+        elif d==' ':
+            Relative(0,pi)
+
+~~~
 ## Resultados
+A continuacion se aprecia un video del funcionamiento de la tortuga con cada uno de los comandos dados
+https://youtu.be/pGD2dH0vhOM
+
 ## Analisis
+El uso de toics para comunicar informacion entre nodos es una estructura escencial y la logica detras de la programacion modular de ros, esto se puede evidenciar en este laboratorio, donde podemos hacer funcion de los topicos para comunicar ciertas acciones a otro nodo, la capacidad de integrarse a python es una facilidad a la hora de realizar posteriormente programas mas complicados para el control del robot, ademas se aprecia tambien que un nodo no solamente puede publicar a ciertos topicos sino usar servicios que ofrece un paquete, los conceptos de nodo, topico y servicios fueron aplicados en este laboratorio.
 ## Conclusiones
+A manera de conclusion, se destaca la gran versatilidad que ofrece ROS a la hora de realizar programas mediante paquetes, su capacidad de integrar varios programas como python o matlab reflejan ampliamente la modularidad que posee este mismo. Con este laboratorio se afianso varios conceptos basicos a la hora de trabajar con ROS como lo es nodo, topico, servicios, paquetes y publicar en un topico. Tambien se esclarecio la relacion entre estos conceptos que es muy importante a la hora de trabajar con ROS.
 
