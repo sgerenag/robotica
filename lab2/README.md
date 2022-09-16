@@ -95,8 +95,27 @@ if __name__ == '__main__':
             Relative(0,pi)
 ~~~
 
-###Scripts de Matlab
-Respecto a los scripts .m solicitados, despues de correr el script suminisitrado (el cual inicia el ROS master y crea el nodo global con rosinit), se puede correr los otros 2 scripts.
+### Scripts de Matlab
+Respecto a los scripts .m solicitados, despues de correr el script suminisitrado (el cual inicia el ROS master y crea el nodo global con rosinit), se puede correr los otros 2 scripts. El tipo del mensaje es 'turtlesim/Pose', como se indica en la documentacion de este topico.
+
+Inicialmente se crea el script que se subscribe al topico pose de turtle1. Este lo hace por medio de crear un objeto que representa un subscriptor en la red.
+
+subs.m:
+~~~
+sub = rossubscriber('/turtle1/pose','turtlesim/Pose')
+pause(1)
+sub.LatestMessage
+~~~
+servPos.m
+
+~~~
+client = rossvcclient("/turtle1/teleport_absolute")
+recfunc = rosmessage(client)
+recfunc.X= 2
+recfunc.Y = 2
+recfunc.Theta = pi
+pos = call(client,recfunc,"Timeout",3)
+~~~
 
 El comando para finalizar el nodo maestro en Matlab es rosshutdown.
 
