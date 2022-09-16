@@ -93,8 +93,13 @@ if __name__ == '__main__':
             Absolute(5.5,5.5,pi/2)
         elif d==' ':
             Relative(0,pi)
-
 ~~~
+
+###Scripts de Matlab
+Respecto a los scripts .m solicitados, despues de correr el script suminisitrado (el cual inicia el ROS master y crea el nodo global con rosinit), se puede correr los otros 2 scripts.
+
+El comando para finalizar el nodo maestro en Matlab es rosshutdown.
+
 ## Resultados
 A continuacion se aprecia un video del funcionamiento de la tortuga con cada uno de los comandos dados
 https://youtu.be/pGD2dH0vhOM
