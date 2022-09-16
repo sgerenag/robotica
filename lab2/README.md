@@ -98,7 +98,7 @@ if __name__ == '__main__':
 ### Scripts de Matlab
 Respecto a los scripts .m solicitados, despues de correr el script suminisitrado (el cual inicia el ROS master y crea el nodo global con rosinit), se puede correr los otros 2 scripts. El tipo del mensaje es 'turtlesim/Pose', como se indica en la documentacion de este topico.
 
-Inicialmente se crea el script que se subscribe al topico pose de turtle1. Este lo hace por medio de crear un objeto que representa un subscriptor en la red.
+Inicialmente se crea el script que se subscribe al topico pose de turtle1. Este lo hace por medio de crear un objeto que representa un subscriptor en la red. Este codigo se corre depues del script inicial, pues ese contiene el rosinit.
 
 subs.m:
 ~~~
@@ -106,8 +106,10 @@ sub = rossubscriber('/turtle1/pose','turtlesim/Pose')
 pause(1)
 sub.LatestMessage
 ~~~
-servPos.m
 
+El siguiente script crea un cliente al servicio "/turtle1/teleport_absolute", despues crea una funcion de solicitud se servicio al servidor. Esta tiene el tipo y formato que utiliza el servidor. Poseterior a esto, sele asignan los argumentos de coordenadas absolutas y angulo. Finalmente se llama el servicio con call(*).
+
+servPos.m:
 ~~~
 client = rossvcclient("/turtle1/teleport_absolute")
 recfunc = rosmessage(client)
@@ -117,7 +119,7 @@ recfunc.Theta = pi
 pos = call(client,recfunc,"Timeout",3)
 ~~~
 
-El comando para finalizar el nodo maestro en Matlab es rosshutdown.
+El comando para finalizar el nodo maestro en Matlab es rosshutdown. 
 
 ## Resultados
 A continuacion se aprecia un video del funcionamiento de la tortuga con cada uno de los comandos dados
