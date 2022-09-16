@@ -145,7 +145,9 @@ El uso de topics para comunicar informacion entre nodos es una estructura escenc
 ### Analisis scripts de Matlab
 Se observa que mediante el toolbox ROS de Matlab se puede crear un nodo global de matlab que permite hacer  publicacion, subsripcion y solicitud de servicios desde Matlab.
 Respecto a la publicacion, se observa que al correr scripLab1.m se mueve la tortuga a la derecha. Esto sucede porque se publica al topico "/turtle1/cmd_vel" la velocidad que debe tener la tortuga en la direccion en la que esta esta orientada, la cual indica moverse hacia el frente. 
+
 La salida de la subscripcion permite oservar las caracteristicas que corresponden al topico suscrito y al obtener el ultimo mensaje, este viene con la forma y tipo de mensaje esperados, en le cual se transmite la posicion actual de la tortuga (X, Y) y su orientacion en radianes.  
+
 Finalmente, en cuanto a la solicitud del servicio, se observa que al ejecutar el codigo, la tortuga cambia su posicion y orientacion. Esto se puede verificar en la ventana de turtlesim y tambien en la nueva salida del topico de pose, en donde se observan los valores de X, Y, Theta actualizados.
 
 ## Conclusiones
