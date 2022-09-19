@@ -141,6 +141,9 @@ Salida de servPos.m:
 
 ## Analisis
 El uso de topics para comunicar informacion entre nodos es una estructura escencial y la logica detras de la programacion modular de ros, esto se puede evidenciar en este laboratorio, donde podemos hacer funcion de los topicos para comunicar ciertas acciones a otro nodo, la capacidad de integrarse a python es una facilidad a la hora de realizar posteriormente programas mas complicados para el control del robot, ademas se aprecia tambien que un nodo no solamente puede publicar a ciertos topicos sino usar servicios que ofrece un paquete, los conceptos de nodo, topico y servicios fueron aplicados en este laboratorio.
+ 
+Respecto al movimiento de la tortuga, se puede observar que mediante mantener presionada la tecla correspondiente, se logra el movimiento solicitado. Los moviemientos hacia adelante, atras y de rotacion se realizan a velocidad constante, pues la variable de velocidad es constante. En particular la rotacion se realiza a baja velocidad, lo cual corresponde con la velocidad solicitada al llamar a moveturtle, 0.1. Respecto a la teletransportacion al origen y al giro de 180 grados, estos se hacen inmediatamente y sin transisiciones. Se observa tambien que la tortuga solo puede hacer un tipo de comando a la vez y no ejecutar 2 acciones simultaneamente al presionar 2 teclas. Esto se debe a la estructura if-else que solo permite que una instruccion se ejecute a la vez.
+En resumen, la tortuga logra producir cada uno de los movimientos solicitados con cada una de las teclas de manera satisfactoria.
 
 ### Analisis scripts de Matlab
 Se observa que mediante el toolbox ROS de Matlab se puede crear un nodo global de matlab que permite hacer  publicacion, subsripcion y solicitud de servicios desde Matlab.
@@ -155,3 +158,5 @@ Finalmente, en cuanto a la solicitud del servicio, se observa que al ejecutar el
 A manera de conclusion, se destaca la gran versatilidad que ofrece ROS a la hora de realizar programas mediante paquetes, su capacidad de integrar varios programas como python o matlab reflejan ampliamente la modularidad que posee este mismo. Con este laboratorio se afiansaron varios conceptos basicos a la hora de trabajar con ROS como lo es nodo, topico, servicios, paquetes y publicar en un topico. Tambien se esclarecio la relacion entre estos conceptos que es muy importante a la hora de trabajar con ROS.
 
 Matlab, por medio del toolbox ROS, permite la publicacion, subsripcion y solicitud de servicios en una red de ROS por medio de su lenguaje, es decir, matlab se puede integrar como parte en una red de ROS.
+
+ROS permite controlar objetos por medio de controlar variables de movimiento como velocidad lineal y de rotacion.
