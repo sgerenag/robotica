@@ -10,6 +10,18 @@ Inicialmente se crean trayectorias por medio de los metodos aprendidos en el lab
 ![image](https://user-images.githubusercontent.com/37639887/194663490-bb06dc4b-22d3-409d-a33a-6428d929dcc4.png)
 ![image](https://user-images.githubusercontent.com/37639887/194664099-22cbb7e4-4ae9-407b-b9ff-f44215fa808a.png)
 
+
+### Configuracion de entradas y salidas
+Al dirigirnos a controlador, en el arbol debajo de configuracion se escoge "I/O System". De la ventan que aparece a la derecha se selecciona "signal" con click derecho.
+
+![image](https://user-images.githubusercontent.com/37639887/194667382-289936bc-d444-40e2-b2a1-043fea6088e3.png)
+
+Al hacer click derecho, se selecciona "New Signal" y se abre la siguiente ventana, en donde se asigna el nombre de las senales y el tipo (entra o salida digital).
+
+![image](https://user-images.githubusercontent.com/37639887/194668210-cedeeddd-0e89-4d61-9e62-4ffbec436437.png)
+
+Por medio de la anterior ventan se crean las entradasdigitales DI_01, DI_02 y la salida DO_01. Para que estas senales creadas tomen efecto se debe reiniciar el controlador.
+
 Ahora, para poder utilizar estas entradas y salida en el programa, primero reiniciamos el controlador el boton con la flecha circular en la pestana "controller". 
 
 ![image](https://user-images.githubusercontent.com/37639887/194668667-d481988c-0af1-4772-abdb-e5fec9cf4c9f.png)
@@ -39,18 +51,6 @@ Ahora sincronizamos el programa con RAPID para generar el codigo RAPID correspon
 Finalmente, para que este proceso se pueda ejecutar indefinidamente, se anade un while infinito al codigo de main:
 
 ![image](https://user-images.githubusercontent.com/37639887/194671181-3b95ef32-4ab4-4377-9239-23d42c4ae7c6.png)
-
-
-### Configuracion de entradas y salidas
-Al dirigirnos a controlador, en el arbol debajo de configuracion se escoge "I/O System". De la ventan que aparece a la derecha se selecciona "signal" con click derecho.
-
-![image](https://user-images.githubusercontent.com/37639887/194667382-289936bc-d444-40e2-b2a1-043fea6088e3.png)
-
-Al hacer click derecho, se selecciona "New Signal" y se abre la siguiente ventana, en donde se asigna el nombre de las senales y el tipo (entra o salida digital).
-
-![image](https://user-images.githubusercontent.com/37639887/194668210-cedeeddd-0e89-4d61-9e62-4ffbec436437.png)
-
-Por medio de la anterior ventan se crean las entradasdigitales DI_01, DI_02 y la salida DO_01. Para que estas senales creadas tomen efecto se debe reiniciar el controlador.
 
 ### Procedimiento en LabSir
 ![image](https://user-images.githubusercontent.com/37639887/194460002-4a99df66-c22d-45f0-b511-b05a8c76c5af.png)
