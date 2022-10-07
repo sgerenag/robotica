@@ -88,9 +88,12 @@ Despues de esto se presiona el boton 2, se observa que se prende el bombillo ver
 ### Video del robot ejecutando la rutina:
 https://www.youtube.com/watch?v=uS5VfN7vxlw&t=14s
 ### Video de simulacion:
+https://vimeo.com/758121587/73d2241945
 
-## Analisis
 
+## Analisis de resultados
+
+El robot cumple con la tarea tal como lo esperado. Se observa que el robot comienza en la posicion de home y solo se mueve cuando sele indica presionando el boton 1. Ademas realiza estos movimientos iniciales mas rapidamente, como se espera deacuerdo a la programacion de moviemientos J. Una vez en la posicion de instalacion de la herramienta, el robot se queda quieto esperando al boton 2. Cuando este se presiona, se prende el bombillo verde en el flexpendant y se observa que el brazo baja tal como lo esperado, orienta la herramietna deacuerdo a los objetivos y procede a dibuajar la letra Y, y inininterrumpidamente, se devuelve a la posicion de home pasanddo primero por la posicion intermedia. finalmente para de nuevo, esperando la senal del boton 1 de nuevo.
 
 ## Conclusiones
 La implementacion de entradas externas al robot controladas por el usuario son un medio para que el usuario peuda controlar lo que hara el robot deacuerdo a la necesidad que tenga. En particular, le permite controlar los tiempos en los que el robot ejecuta cada rutina y esto le conviene al usuario, pues asi puede solicitar la accion del robot solo cuando la necesita (en este caso, cuando la herramienta ya esta instalada).
