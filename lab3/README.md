@@ -1,4 +1,4 @@
-# lab 2 robotica. Robotica en desarrollo introduccion a ROS
+# lab 3 robotica. 
 ### Daniel Melo Avila
 ### Sergio Andres Gerena Gomez
 
@@ -85,6 +85,8 @@ Despues de esto se presiona el boton 2, se observa que se prende el bombillo ver
 ![image](https://user-images.githubusercontent.com/37639887/194461797-c539a27c-6f66-4f32-a8cb-112726297b85.png)
 ![image](https://user-images.githubusercontent.com/37639887/194461826-18959966-749f-43bf-bf98-6cf4703a1be9.png)
 
+A continuacion se porporcionan los links a los videos de la practica y de la simulacion:
+
 ### Video del robot ejecutando la rutina:
 https://www.youtube.com/watch?v=uS5VfN7vxlw&t=14s
 ### Video de simulacion:
@@ -93,9 +95,14 @@ https://vimeo.com/758121587/73d2241945
 
 ## Analisis de resultados
 
-El robot cumple con la tarea tal como lo esperado. Se observa que el robot comienza en la posicion de home y solo se mueve cuando sele indica presionando el boton 1. Ademas realiza estos movimientos iniciales mas rapidamente, como se espera deacuerdo a la programacion de moviemientos J. Una vez en la posicion de instalacion de la herramienta, el robot se queda quieto esperando al boton 2. Cuando este se presiona, se prende el bombillo verde en el flexpendant y se observa que el brazo baja tal como lo esperado, orienta la herramietna deacuerdo a los objetivos y procede a dibuajar la letra Y, y inininterrumpidamente, se devuelve a la posicion de home pasanddo primero por la posicion intermedia. finalmente para de nuevo, esperando la senal del boton 1 de nuevo.
+El robot cumple con la tarea tal como lo esperado. Se observa que el robot comienza en la posicion de home y solo se mueve cuando sele indica presionando el boton 1. Ademas realiza estos movimientos iniciales mas rapidamente, como se espera deacuerdo a la programacion de moviemientos J. Una vez en la posicion de instalacion de la herramienta, el robot se queda quieto esperando al boton 2. Cuando este se presiona, se prende el bombillo verde en el flexpendant y se observa que el brazo baja tal como lo esperado, orienta la herramietna deacuerdo a los objetivos y procede a dibuajar la letra Y, y inininterrumpidamente, se devuelve a la posicion de home pasanddo primero por la posicion intermedia. Finalmente al terminar la ejecucion de path Y el robot para de nuevo, esperando la senal del boton 1.
+
+Respecto a la simulacion, se observa que el robot se comporta identicamente al anterior parrafo, con la unica diferencia de que la letra Y se dibuja sobre un workobjetct ubicado en el programa y no sobre uno ubicado sobre el piso del tablero.
 
 ## Conclusiones
 La implementacion de entradas externas al robot controladas por el usuario son un medio para que el usuario peuda controlar lo que hara el robot deacuerdo a la necesidad que tenga. En particular, le permite controlar los tiempos en los que el robot ejecuta cada rutina y esto le conviene al usuario, pues asi puede solicitar la accion del robot solo cuando la necesita (en este caso, cuando la herramienta ya esta instalada).
 
-Un programa de rapid puede controlar senales que no son del robot (como un bombillo). Estos pueden ser utles para complementar la funcion del robot, como lo seria un bombillo para senalizar que el robot se esta moviendo.
+Un programa de rapid puede controlar senales que no son del robot (como un bombillo). Estas pueden ser utles para complementar la funcion del robot, como lo seria un bombillo para senalizar que el robot se esta moviendo u otro dipo de acutadores que se puedan controlar por medio de senales digitales, como una valvula de un fluido que accione un cilindro, por ejemplo.
+
+Robot Studio permite programar y simular la interaccion del robot con la entradas y salidas que tendra el programa, permitiendo asi verificar el resultado de la programacion antes de correr el codigo en el robot fisico. Esto permite disminuye el riesgo de accidentes y permite ahorrar tiempo de depuracion, pues hace que no se requiera al robot fisico para corroborar el funcionamiento del programa interactuando con entradas y salidas.
+
