@@ -3,6 +3,13 @@
 ### Sergio Andres Gerena Gomez
 
 ## Metodologia
+### Creacion de programa RAPID
+Inicialmente se crean trayectorias por medio de los metodos aprendidos en el laboratorio 1. Esto se hace de manera que el robot comience en la posicion de home y ,por medio de movimientos J, pase por una pose comoda para instalar la herramienta y posteriormente se aproxime al suelo a realizar la forma de la Y. Ya estando cerca de la superficie donde se escribira, se utilizan movimientos L para moverse entre targets ubicados en las esquinas de la Y. Finalmente se realiza el movimiento de nuevo hacia home primero pasando por un target intermedio para facilitar el movimiento hacia home. Las trayectorias para dirigirse hacia la pose de puesta de la herramienta se ubican dentro del procedimiento "instpose", mientras que el resto de trayecotorias que se aproximan, realizan la Y y se devuelven a home se ubican dentro de un solo procedimiento, "pathY".
+![image](https://user-images.githubusercontent.com/37639887/194663490-bb06dc4b-22d3-409d-a33a-6428d929dcc4.png)
+![image](https://user-images.githubusercontent.com/37639887/194664099-22cbb7e4-4ae9-407b-b9ff-f44215fa808a.png)
+
+### Configuracion de entradas y salidas
+
 
 ### Procedimiento en LabSir
 ![image](https://user-images.githubusercontent.com/37639887/194460002-4a99df66-c22d-45f0-b511-b05a8c76c5af.png)
