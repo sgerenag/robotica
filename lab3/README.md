@@ -1,7 +1,8 @@
 # lab 3 robotica. 
 ### Daniel Melo Avila
 ### Sergio Andres Gerena Gomez
-##Introduccion
+
+## Introduccion
 A continuacion se describe el desarrollo del laboratorio 3 de robotica. Los links de simulacion y practica son los siguientes:
 
 https://www.youtube.com/watch?v=uS5VfN7vxlw&t=14s
