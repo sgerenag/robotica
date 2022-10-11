@@ -66,11 +66,11 @@ Robot.plot(q1,'notiles','noname');
 </code></pre>
 A continuacion se muestra la tabla con los parametros DH, ademas de la MTH de la base a la herramienta en esa posicion.
 
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-02-48.png![imagen](https://user-images.githubusercontent.com/38962033/194994645-4c19d6fa-4c4a-4a92-87bb-f18ea1eee0d8.png)
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-04-59.png![imagen](https://user-images.githubusercontent.com/38962033/194994849-59b50bf1-ea93-4a23-b163-7c71782dfdd3.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194994645-4c19d6fa-4c4a-4a92-87bb-f18ea1eee0d8.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194994849-59b50bf1-ea93-4a23-b163-7c71782dfdd3.png)
 
 Ademas de poder ver el robot en la posicion donde todos los valores articulares son 0
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-08-54.png![imagen](https://user-images.githubusercontent.com/38962033/194995140-b2d1f341-a270-4ab3-b68e-bfb288cd45e4.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194995140-b2d1f341-a270-4ab3-b68e-bfb288cd45e4.png)
 
 Para Las posiciones HOME y GOAL delimitadas en el insciso aterior tenemos el siguiente codigo, el cual nos da la matris de transformacion homogenea de la base a la herramienta y la pose del robot
 <pre><code>
@@ -84,12 +84,12 @@ Robot.plot(GOAL,'notiles','noname');
 </code></pre>
 A continuacion se observa la salida para la pose HOME
 
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-16-28.png![imagen](https://user-images.githubusercontent.com/38962033/194995882-1bd76ee8-02f3-432c-aa91-c939ba518bb6.png)
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-17-01.png![imagen](https://user-images.githubusercontent.com/38962033/194995967-a43ef7f2-413e-49d6-b8d9-81b990739385.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194995882-1bd76ee8-02f3-432c-aa91-c939ba518bb6.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194995967-a43ef7f2-413e-49d6-b8d9-81b990739385.png)
 
 Y estas muestran la salida para la pose GOAL
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-18-36.png![imagen](https://user-images.githubusercontent.com/38962033/194996160-e082003b-e8cc-4d19-9670-8884d8e87f35.png)
-file:///home/sebastian/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-10-10%2023-20-09.png![imagen](https://user-images.githubusercontent.com/38962033/194996345-d0ed1170-4b51-4715-aa94-b4b3851d7ef6.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194996160-e082003b-e8cc-4d19-9670-8884d8e87f35.png)
+![imagen](https://user-images.githubusercontent.com/38962033/194996345-d0ed1170-4b51-4715-aa94-b4b3851d7ef6.png)
 
 ### Conexion con Matlab
   ## Resultados
