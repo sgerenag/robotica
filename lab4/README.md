@@ -16,7 +16,7 @@ Con base en estas mediciones, se plantea el siguiente esquema y con ello, la sig
 ### ROS
 Para el desarrollo del codigo, se adapto el script jointSrv.py que fue dado en la guia, en este se realiza la siguiente modificacion
 
-´´´
+<pre><code>
 if __name__ == '__main__':
     try:
         # Goal_Position (0,1023)
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 
-´´´
+</code></pre>
 
 En este primero, se setea los torques maximos de cada articulacion, posteriormente se hace el movimiento de cada articulacion en el orden establecido por la guia, de forma tal que primero va a una posicion totalmente vertical (512) con una pausa entre cada movimiento para poder apreciar el mismo, una vez termina el movimiento de home, comienza a moverse a la posicion objetivo articulacion por articulacion.
 
