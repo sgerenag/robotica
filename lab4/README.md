@@ -12,7 +12,8 @@ A continuacion un grafico que muestra las diversas dimensiones del brazo
 
 Con base en estas mediciones, se plantea el siguiente esquema y con ello, la siguiente tabla con los parametros DH del robot.
 ![image](https://user-images.githubusercontent.com/38962033/194965109-2685624b-a61a-4f79-a8bc-3177f622ec73.png)
-![image](https://user-images.githubusercontent.com/38962033/194966556-a4514d3e-d996-43a9-9c88-abbd8918cd2e.png)
+![image](https://user-images.githubusercontent.com/38962033/195693109-8b2ef55e-73b3-4738-9ed1-b5027aa37d8e.png)
+
 ### ROS
 Para el desarrollo del codigo, se adapto el script jointSrv.py que fue dado en la guia, en este se realiza la siguiente modificacion
 
