@@ -99,7 +99,14 @@ Y estas muestran la salida para la pose GOAL
 
 ![imagen](https://user-images.githubusercontent.com/38962033/194996345-d0ed1170-4b51-4715-aa94-b4b3851d7ef6.png)
 
-### Conexion con Matlab
+### Publicacion en los topicos de controlador de junta
+Para esta parte primero se modifico el codigo propuesto en el laboratorio para poder realizar la instruccion requerida en el ejercicio, en este codigo se modifica el main de tal forma que primero, se setea el limite de torque para cada articulacion, luego se lleva a la primera posicion que es home, usando la funcion que se ve en el codigo, en el tambien se pone el tiempo de descanso entre cada comando, esto con el fin de que se pueda observar en el video el movimiento de cada una de las articulaciones, una vez se logra la primera posicion (brazo totalmente erguido) se pasa a la segunda posicion articulacion por articulacion en el orden indicado en la guia
+
+### Suscripcion a topicos
+Para esta seccion se empleo el codigo en el script " ", en este se suscribe al topico "" que nos permite entre varias cosas, conocer la posicion de cada articulacion del robot en radianes, 
+
+
+
   ## Resultados
 
   ## Análisis de resultados
