@@ -11,7 +11,8 @@ A continuacion un grafico que muestra las diversas dimensiones del brazo
 ![image](https://user-images.githubusercontent.com/38962033/194959613-80de7b63-cdaa-483f-9fd6-eae699813f2b.png)
 
 Con base en estas mediciones, se plantea el siguiente esquema y con ello, la siguiente tabla con los parametros DH del robot.
-![image](https://user-images.githubusercontent.com/38962033/194965109-2685624b-a61a-4f79-a8bc-3177f622ec73.png)
+![image](https://user-images.githubusercontent.com/38962033/196545051-07c66a1c-a128-4f2a-a164-8910873f4d31.png)
+
 ![image](https://user-images.githubusercontent.com/38962033/195693109-8b2ef55e-73b3-4738-9ed1-b5027aa37d8e.png)
 
 ### ROS
