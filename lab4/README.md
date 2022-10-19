@@ -119,26 +119,26 @@ En esta seccion, se crea un codigo en python el cual permite, segun un vector co
 
 
 Esta verificacion de las diversas poses se hace teniendo en cuenta el home estipulado anteriormente, de esta forma podemos usar el toolbox como verificacion de las mismas, a continuacion se muestra la pose solicitada, la efectuada por el robot y su verificacion empleando el toolbox.
-<b>q1=[0 0 0 0 0] <\b>
+<b>q1=[0 0 0 0 0] </b>
     
 ![imagen](https://user-images.githubusercontent.com/38962033/196780408-f2d436e4-47e7-4436-9068-49e611300c6d.png)
    
-<b>q2=[-20 20 -20 20 0] <\b>
+<b>q2=[-20 20 -20 20 0] </b>
     
  ![imagen](https://user-images.githubusercontent.com/38962033/196780532-0fef92d7-bee4-4233-8644-9bcbb3f1afa8.png)
 
     
-<b>q3=[30 -30 30 -30 0] <\b>
+<b>q3=[30 -30 30 -30 0] </b>
    
     ![imagen](https://user-images.githubusercontent.com/38962033/196780737-c4530e91-0bf4-47f3-832b-45c93a7c7cb6.png)
 
     
-<b>q4=[90 15 -55 17 0] <\b>
+<b>q4=[90 15 -55 17 0] </b>
     
     ![imagen](https://user-images.githubusercontent.com/38962033/196780808-7598e076-aba8-4287-9de6-a2c862938abb.png)
 
     
-<b>q5=[90 45 -55 45 10] <\b>
+<b>q5=[90 45 -55 45 10] </b>
 
    ![imagen](https://user-images.githubusercontent.com/38962033/196780847-038f7c60-0aad-481b-85ad-0b8e7998936e.png)
 
