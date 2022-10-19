@@ -102,15 +102,23 @@ Y estas muestran la salida para la pose GOAL
 ### Publicacion en los topicos de controlador de junta
 Para esta parte primero se modifico el codigo propuesto en el laboratorio para poder realizar la instruccion requerida en el ejercicio, en este codigo se modifica el main de tal forma que primero, se setea el limite de torque para cada articulacion, luego se lleva a la primera posicion que es home, usando la funcion que se ve en el codigo, en el tambien se pone el tiempo de descanso entre cada comando, esto con el fin de que se pueda observar en el video el movimiento de cada una de las articulaciones, una vez se logra la primera posicion (brazo totalmente erguido) se pasa a la segunda posicion articulacion por articulacion en el orden indicado en la guia
 
-### Suscripcion a topicos
-Para esta seccion se empleo el codigo en el script " ", en este se suscribe al topico "" que nos permite entre varias cosas, conocer la posicion de cada articulacion del robot en radianes, asi optenemos la siguiente salida
+![imagen](https://user-images.githubusercontent.com/38962033/196767425-0819dce7-caa6-425e-9dc1-126a5cb35442.png)
 
-esta se comprueba viendo la posicion del robot mientras se ejecuta este codigo, la cual es la observada a continuacion
+### Suscripcion a topicos
+Para esta seccion se empleo el codigo en el script "JointSub.py ", en este se suscribe al topico "JointState" que nos permite entre varias cosas, conocer la posicion de cada articulacion del robot en radianes, asi obtenemos la siguiente salida
+
+![imagen](https://user-images.githubusercontent.com/38962033/196767867-e20eac01-a60f-431c-8d84-315024108533.png)
+![imagen](https://user-images.githubusercontent.com/38962033/196768028-7dca6b56-8876-4ff5-810e-e6ca08ce4c91.png)
+
+sta se comprueba viendo la posicion del robot mientras se ejecuta este codigo, la cual es la observada a continuacion
 
 ### codigo para enviar cierta pose al robot y su paralelo en matlab
 
+En esta seccion, se crea un codigo en python el cual permite, segun un vector con los valores articulares indicado, se cambia la posicion del robot, se plantea un codigo secuencial ciclico donde se alterna entre las 5 posiciones pedidas en el orden estipulado en la guia, dicho codigo se muestra a continuacion
 
+![imagen](https://user-images.githubusercontent.com/38962033/196771248-0ebca22d-a352-4058-a91d-4d4df5703f79.png)
 
+Esta verificacion de las diversas poses se hace teniendo en cuenta el home estipulado anteriormente, de esta forma podemos usar el toolbox como verificacion de las mismas, a continuacion se muestra la pose solicitada, la efectuada por el robot y su verificacion empleando el toolbox
 
   ## Resultados
   En el siguiente video se observa el movimiento secuencial de la publicacion en los topicos de controlador de junta: https://youtu.be/afS6nOVe7oA
