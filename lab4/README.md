@@ -130,12 +130,14 @@ Esta verificacion de las diversas poses se hace teniendo en cuenta el home estip
     
 <b>q3=[30 -30 30 -30 0] </b>
    
-    ![imagen](https://user-images.githubusercontent.com/38962033/196780737-c4530e91-0bf4-47f3-832b-45c93a7c7cb6.png)
+![imagen](https://user-images.githubusercontent.com/38962033/196781953-33a0044b-6d58-4fef-9a42-466ca3da6e10.png)
+
 
     
 <b>q4=[90 15 -55 17 0] </b>
     
-    ![imagen](https://user-images.githubusercontent.com/38962033/196780808-7598e076-aba8-4287-9de6-a2c862938abb.png)
+![imagen](https://user-images.githubusercontent.com/38962033/196782012-04712318-b517-4f48-bc26-e397101a7002.png)
+ 
 
     
 <b>q5=[90 45 -55 45 10] </b>
