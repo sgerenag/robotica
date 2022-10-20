@@ -115,13 +115,15 @@ Esta se comprueba viendo la posicion del robot mientras se ejecuta este codigo, 
 ![imagen](https://user-images.githubusercontent.com/38962033/196828083-a550932d-61a6-4ec0-989f-22ce37067b13.png)
 
 
-### codigo para enviar cierta pose al robot y su paralelo en matlab
+### conexion ROS+toolbox
 
 En esta seccion, se crea un codigo en python el cual permite, segun un vector con los valores articulares indicado, se cambia la posicion del robot, se plantea un codigo secuencial ciclico donde se alterna entre las 5 posiciones pedidas en el orden estipulado en la guia, dicho codigo se muestra a continuacion
 
+![imagen](https://user-images.githubusercontent.com/38962033/196831663-099274d7-f7b0-49b4-8c47-9e7f1bc2cda0.png)
 
+En este se plantea una correccion en el tercer valor del vector, ya que este sufre una modificacion en la configuracion del home realizada en el analisis del brazo, para hacer consecuente este con las salidas mostradas a continuacion por parte del toolbox.
 
-Esta verificacion de las diversas poses se hace teniendo en cuenta el home estipulado anteriormente, de esta forma podemos usar el toolbox como verificacion de las mismas, a continuacion se muestra la pose solicitada, la efectuada por el robot y su verificacion empleando el toolbox.
+A continuacion se muestra estas poses haciendo uso del toolbox.
 <b>q1=[0 0 0 0 0] </b>
     
 ![imagen](https://user-images.githubusercontent.com/38962033/196780408-f2d436e4-47e7-4436-9068-49e611300c6d.png)
@@ -149,8 +151,9 @@ Esta verificacion de las diversas poses se hace teniendo en cuenta el home estip
 
     
   ## Resultados
-  En el siguiente video se observa el movimiento secuencial de la publicacion en los topicos de controlador de junta: https://youtu.be/afS6nOVe7oA
+  En el siguiente video se observa el movimiento secuencial del brazo https://youtu.be/afS6nOVe7oA
 
 
 
   ## Conclusiones
+Ros permite un control preciso y facil del brazo empleado, ademas de poder facilmente desarrollar las diversas posiciones requeridas ya sea articulacion por articulacion (realizado en la primera parte de este laboratorio) asi como una posicion en concreto (con todos los valores articulares en un solo vector). Otra conclusion es la versatilidad con la que se cuenta en ROS para configurar una gran diversidad de brazos, asi como su concordancia con el toolbox de matlab y aunque existe una posibilidad de conexion entre ROS y matlab, no fue necesario una conexion directa entre ambos para el correcto desarrollo del laboratorio.
