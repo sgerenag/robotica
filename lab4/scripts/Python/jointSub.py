@@ -2,7 +2,7 @@
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import JointState
-
+#call
 def callback(data):
     rospy.loginfo(data.position)
     if data.position[4]>-2:

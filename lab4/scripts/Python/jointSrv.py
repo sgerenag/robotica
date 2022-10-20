@@ -1,6 +1,3 @@
-"""
-Allows to use the service dynamixel_command 
-"""
 import rospy
 import time
 # from std_msgs.msg import String
