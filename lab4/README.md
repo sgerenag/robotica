@@ -49,7 +49,8 @@ if __name__ == '__main__':
 
 </code></pre>
 
-En este primero, se setea los torques maximos de cada articulacion, posteriormente se hace el movimiento de cada articulacion en el orden establecido por la guia, de forma tal que primero va a una posicion totalmente vertical (512) con una pausa entre cada movimiento para poder apreciar el mismo, una vez termina el movimiento de home, comienza a moverse a la posicion objetivo articulacion por articulacion.
+En este primero, se setea los torques máximos de cada articulación, posteriormente se hace el movimiento de cada articulación en el orden establecido por la guía, de forma tal que primero va a una posición totalmente vertical (512) con una pausa entre cada movimiento para poder apreciar el mismo, una vez termina el movimiento de home, comienza a moverse a la posición objetivo articulación por articulación.
+
 
 ### Toolbox
 El siguiente codigo muestra la configuracion del robot segun el marco y los parametros encontrados en el analisis
