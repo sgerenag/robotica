@@ -101,8 +101,8 @@ Y estas muestran la salida para la pose GOAL
 
 ![imagen](https://user-images.githubusercontent.com/38962033/194996345-d0ed1170-4b51-4715-aa94-b4b3851d7ef6.png)
 
-### Publicacion en los topicos de controlador de junta
-Para esta parte primero se modifico el codigo propuesto en el laboratorio para poder realizar la instruccion requerida en el ejercicio, en este codigo se modifica el main de tal forma que primero, se setea el limite de torque para cada articulacion, luego se lleva a la primera posicion que es home, usando la funcion que se ve en el codigo, en el tambien se pone el tiempo de descanso entre cada comando, esto con el fin de que se pueda observar en el video el movimiento de cada una de las articulaciones, una vez se logra la primera posicion (brazo totalmente erguido) se pasa a la segunda posicion articulacion por articulacion en el orden indicado en la guia
+### Publicación en los tópicos de controlador de junta
+Para esta parte primero se modificó el código propuesto en el laboratorio para poder realizar la instrucción requerida en el ejercicio, en este código se modifica el main de tal forma que primero, se setea el limite de torque para cada articulación, luego se lleva a la primera posición que es home, usando la función que se ve en el codigo, en el tambien se pone el tiempo de descanso entre cada comando, esto con el fin de que se pueda observar en el video el movimiento de cada una de las articulaciones, una vez se logra la primera posición (brazo totalmente erguido) se pasa a la segunda posicion articulacion por articulación en el orden indicado en la guia
 
 ![imagen](https://user-images.githubusercontent.com/38962033/196767425-0819dce7-caa6-425e-9dc1-126a5cb35442.png)
 
