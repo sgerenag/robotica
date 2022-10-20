@@ -110,7 +110,10 @@ Para esta seccion se empleo el codigo en el script "JointSub.py ", en este se su
 ![imagen](https://user-images.githubusercontent.com/38962033/196767867-e20eac01-a60f-431c-8d84-315024108533.png)
 ![imagen](https://user-images.githubusercontent.com/38962033/196768028-7dca6b56-8876-4ff5-810e-e6ca08ce4c91.png)
 
-sta se comprueba viendo la posicion del robot mientras se ejecuta este codigo, la cual es la observada a continuacion
+Esta se comprueba viendo la posicion del robot mientras se ejecuta este codigo, la cual es la observada a continuacion
+
+![imagen](https://user-images.githubusercontent.com/38962033/196828083-a550932d-61a6-4ec0-989f-22ce37067b13.png)
+
 
 ### codigo para enviar cierta pose al robot y su paralelo en matlab
 
