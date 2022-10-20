@@ -5,9 +5,10 @@
 
 ## Metodologia
 ### Analisis
-El primer paso es dimensionar el robot y con base en esto, encontrar el esquema DH que le corresponde, con los parametros exigidos. Esto es indispensable para poder hacer un modelo del robot y poder manejar el mismo en las distintas poses solicitadas
+El primer paso es dimensionar el robot y con base en esto, encontrar el esquema DH que le corresponde, con los parámetros exigidos. Esto es indispensable para poder hacer un modelo del robot y poder manejar el mismo en las distintas poses solicitadas
 
-A continuacion un grafico que muestra las diversas dimensiones del brazo
+A continuación un gráfico que muestra las diversas dimensiones del brazo
+
 ![image](https://user-images.githubusercontent.com/38962033/194959613-80de7b63-cdaa-483f-9fd6-eae699813f2b.png)
 
 Con base en estas mediciones, se plantea el siguiente esquema y con ello, la siguiente tabla con los parametros DH del robot.
