@@ -18,7 +18,7 @@ q_4&=atan2\\left(\\sqrt{1-\\left(\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2}\\right)^
 \\end{split}
 $$
 
-### ROS
+### Comprobacion usando el toolbox
 
 
 ### Toolbox
