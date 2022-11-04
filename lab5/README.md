@@ -12,7 +12,7 @@ De aqui podemos inferir las siguientes ecuaciones para cada uno de los q que nos
 $$
 \\begin{split}
 q_1&=atan2(x,y)\\\\
-q_2&=atan2(\\sqrt{1-(\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2})^2},\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2})+atan(\\frac{(z-L_1)}{\\sqrt{x^2+y^2}})\\\\
+q_2&=atan2\\left(\\sqrt{1-\\left(\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2}\\right)^2},\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2})+atan(\\frac{(z-L_1)}{\\sqrt{x^2+y^2}}\\right)\\\\
 q_3&=-atan2(\\sqrt{1-(\\frac{(\\sqrt{x^2+y^2-z^2}-L_4)^2}{(2*L_2)^2})^2-1)^2},\\frac{(\\sqrt{x^2+y^2-z^2}-L_4)^2}{(2*L_2)^2})^2-1)\\\\
 q_4&=atan2(\\sqrt{1-(\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2})^2},\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2})
 \\end{split}
