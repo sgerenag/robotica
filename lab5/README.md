@@ -19,7 +19,7 @@ q_4&=atan2\\left(\\sqrt{1-\\left(\\frac{\\sqrt{x^2+y^2-z^2}-L_4}{2*L_2}\\right)^
 $$
 
 ### Comprobacion usando el toolbox
-
+Para verificar estas ecuaciones se implemento un script en matlab donde se le da una posicion y se calcula los diversos valores articulares, posteriormente se comprueba mediante el uso del toolbox que con estos valores articulares 
 
 ### Toolbox
 
