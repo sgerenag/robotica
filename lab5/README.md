@@ -21,10 +21,13 @@ $$
 ### Comprobacion usando el toolbox
 
 Para verificar estas ecuaciones se implemento un script en matlab donde se le da una posicion y se calcula los diversos valores articulares, posteriormente se comprueba mediante el uso del toolbox que con estos valores articulares se llegue a la posicion indicada, a continuacion se muestra las diversas pruebas
+
 ![image](https://user-images.githubusercontent.com/38962033/200090971-a3e10695-284d-40fb-bca8-2821b0ddaeef.png)
 
 Ahora, para cada punto se calculo un vector con los diversos q mostrado a continuacion
+
 ![image](https://user-images.githubusercontent.com/38962033/200091104-66ab67a1-ba9f-4a46-8299-27444d8facf5.png)
+
 donde cada fila indica una posicion en orden, y cada columna es un q desde q1 hasta q4, ahora empleando cinematica directa tenemos las siguientes salidas del robot para cada vector de q asociado a una posicion xyz
 
 #### Posicion (x=50, y=250, z=40)
