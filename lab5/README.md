@@ -73,7 +73,6 @@ Para la lectura de este csv se manejo un archivo .py que modifica un poco la lec
 
 El codigo encargado de la publicacion de la posicion requerida es robot.py, en el se crea la clase phantomX la cual cuenta con el metodo joint_publisher(), en el se realiza toda la logica que determina la trayectoria a realizar por el brazo, asi segun el comando dado por el usuario, el llamara a la funcion get_points() en cierto pointer, que traera la matriz de Q necesaria para realizar dicha trayectoria, tambien se encarga de publicar en el topico del phantom las debidas posiciones con el sleep respectivo para poder ejecutar cada comando sin entrar en conflicto con el ciclo de python.
 
-A continuacion se muestra una imagen esperada de las figuras a realizar
 
 
 
